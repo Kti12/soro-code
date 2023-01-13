@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateau-centre</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .grid{
+    max-width: 1300px;
+    width: 60%;
+    height: 120em;
+    margin: 1em auto;
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    /* grid-gap: 10px; */
+}
+
+.gridElement{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-item{
+    /* width: 300px;
+    height: 200px;
+    background-color: black;*/
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+.img{
+    width: 80%;
+    height: 100%;
+}
+
+
+.img > img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 0 0 black;
+    animation: pulse 1.3s infinite;
+}
+@keyframes pulse{
+    to{
+        box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.51);
+    }
+}
+
+
+.grid-item>*{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+    </style>
+    <h1>LISTE DES BAIES DISPONIBLES </h1>
+    <h2>Choisissez en une</h2>
+
+    <div class="grid">
+        <div class="gridElement">
+            <div class="grid-item">
+                <div class="img">
+                    <img src="../img/iStock-1270269968.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>parking15 baie41(près de PIGIER)</h3>
+                    <h3 style="color: red;">libre</h3>
+                    <a href=""><input type="submit" value="Réserver"></a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="img">
+                    <img src="../img/parking-fromentine-labarredemonts.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>parking15 baie13(près de lycée moderne du plateau)</h3>
+                    <h3 style="color: red;">libre</h3>
+                    <a href=""><input type="submit" value="Réserver"></a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="img">
+                    <img src="../img/parking-fromentine-labarredemonts.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>parking5 baie12(près de l'ESAM)</h3>
+                    <h3 style="color: red;">libre</h3>
+                    <a href=""><input type="submit" value="Réserver"></a>
+                </div>
+            </div>
+        </div>
+        <div class="gridElement">
+            <div class="grid-item">
+                <div class="img">
+                    <img src="../img/depositphotos_30156457-stock-photo-vegetation-parking-spot.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>parking13 baie13(près de la mosquée Salam)</h3>
+                    <h3 style="color: red;">libre</h3>
+                    <a href=""><input type="submit" value="Réserver"></a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="img">
+                    <img src="../img/istockphoto-1335929190-612x612.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>parking1 baie2(près de novotel)</h3>
+                    <h3 style="color: red;">libre</h3>
+                    <a href=""><input type="submit" value="Réserver"></a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="img">
+                    <img src="../img/depositphotos_30156457-stock-photo-vegetation-parking-spot.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>parking10 baie21(près de Super U)</h3>
+                    <h3 style="color: red;">libre</h3>
+                    <a href=""><input type="submit" value="Réserver"></a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="gridElement">
+            <div class="grid-item">
+                <div class="img">
+                    <img src="../img/istockphoto-1335929190-612x612.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>parking20 baie4(près de la mairie)</h3>
+                    <h3 style="color: red;">libre</h3>
+                    <a href=""><input type="submit" value="Réserver"></a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="img">
+                    <img src="../img/depositphotos_30156457-stock-photo-vegetation-parking-spot.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>parking9 baie20(près du supermarché kilo)</h3>
+                    <h3 style="color: red;">libre</h3>
+                    <a href=""><input type="submit" value="Réserver"></a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="img">
+                    <img src="../img/istockphoto-1335929190-612x612.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>parking8 baie5(près de la cathedrale)</h3>
+                    <h3 style="color: red;">libre</h3>
+                    <a href=""><input type="submit" value="Réserver"></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
